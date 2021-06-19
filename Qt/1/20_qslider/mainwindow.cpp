@@ -14,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     /* 设置值范围 */
     horizontalSlider->setRange(0, 100);
 
-    /* 实例化水平滑动条对象 */
+    /* 实例化垂直滑动条对象 */
     verticalSlider = new QSlider(Qt::Vertical, this);
 
     /* 设置显示的位置与大小 */
