@@ -27,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
     /* 历史记录面板实例化 */
     undoView = new QUndoView(undoStack);
 
-    /* 实例化两个按钮，用于加一操作 */
+    /* 实例化一个按钮，用于加一操作 */
     pushButton = new QPushButton();
 
     /* 标签，用于显示计算结果 */
