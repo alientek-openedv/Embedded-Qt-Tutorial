@@ -61,8 +61,8 @@ MainWindow::MainWindow(QWidget *parent)
     textBrowser = new QTextBrowser();
 
     label[0]->setText("目标IP地址：");
-    label[1]->setText("目标端口：");
-    label[2]->setText("绑定端口：");
+    label[1]->setText("绑定端口：");
+    label[2]->setText("目标端口：");
 
     /* 设置标签根据文本文字大小自适应大小  */
     label[0]->setSizePolicy(QSizePolicy::Fixed,
