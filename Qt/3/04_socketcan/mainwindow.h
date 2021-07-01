@@ -68,7 +68,7 @@ private:
     /* 插件类型项初始化 */
     void pluginItemInit();
 
-    /* 比牲率项初始化 */
+    /* 比特率项初始化 */
     void bitrateItemInit();
 
 private slots:

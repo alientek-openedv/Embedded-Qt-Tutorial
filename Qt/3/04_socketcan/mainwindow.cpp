@@ -14,7 +14,7 @@ Copyright © Deng Zhimao Co., Ltd. 1990-2021. All rights reserved.
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    /* 使用系统指令比牲率初始化CAN,默认为1000000bits/s */
+    /* 使用系统指令比特率初始化CAN,默认为1000000bits/s */
     system("ifconfig can0 down");
     system("ip link set up can0 type can bitrate 1000000 restart-ms 100");
 
@@ -243,7 +243,7 @@ void MainWindow::connectDevice()
                 tr("ip link set up %1 type can bitrate %2 restart-ms 100")
                 .arg(comboBox[1]->currentText())
                 .arg(comboBox[2]->currentText());
-        /* 使用系统指令以设置的比牲率初始化CAN */
+        /* 使用系统指令以设置的比特率初始化CAN */
         system(cmd1.toStdString().c_str());
         system(cmd2.toStdString().c_str());
 
