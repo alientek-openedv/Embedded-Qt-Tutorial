@@ -19,7 +19,7 @@ private:
     /* 声明一个QDialogButtonBox对象 */
     QDialogButtonBox *dialogButtonBox;
 
-    /* 声明一个QDialogButtonBox对象 */
+    /* 声明一个QPushButton对象 */
     QPushButton *pushButton;
 
 private slots:
