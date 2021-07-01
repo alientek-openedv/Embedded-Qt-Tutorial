@@ -143,7 +143,7 @@ void MainWindow::clientConnected()
     /* 客户端的ip信息 */
     QString ip = tcpSocket->peerAddress().toString();
     /* 客户端的端口信息 */
-    qint16 port = tcpSocket->peerPort();
+    quint16 port = tcpSocket->peerPort();
     /* 在文本浏览框里显示出客户端的连接信息 */
     textBrowser->append("客户端已连接");
     textBrowser->append("客户端ip地址:"
