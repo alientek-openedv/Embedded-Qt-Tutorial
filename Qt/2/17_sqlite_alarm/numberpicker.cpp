@@ -125,6 +125,9 @@ void NumberPicker::paintEvent(QPaintEvent *)
         mouseSrcPos += Height / devide;
         deviation -= Height / devide;
         currentValue -= interval;
+        /* 负数处理 */
+        if (currentValue < 0)
+            currentValue = maxRange + currentValue;
     }
 
     if (deviation <= -Height / devide && currentValue < maxRange ) {

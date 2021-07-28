@@ -359,6 +359,8 @@ void MainWindow::cancelButtonClicked()
         /* 删除数据库整一行数据 */
         model->removeRow(listWidget->currentRow());
         model->submit();
+        /* 执行上面语句 */
+        model->select();
         itemObjectInfo.remove(listWidget->currentRow());
         listWidget->takeItem(listWidget->currentRow());
     }
